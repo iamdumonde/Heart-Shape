@@ -1,0 +1,172 @@
+#heart {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-block: 1em;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background-color: #000;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.parent {
+    margin-block: 7px;
+    padding: 2em;
+}
+
+/********************
+APPLICATION DE FLEXBOX
+********************/
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parent div:nth-child(2) {
+    display: flex;
+    align-self: flex-start;
+}
+
+.parent div:nth-child(3) {
+    display: flex;
+    align-self: flex-end;
+}
+
+
+/* *******************
+Coeur 2
+************************ */
+#heart2 {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-block: 1em;
+}
+
+#heart2:before,
+#heart2:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background-color: purple;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart2:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+
+/* *******************
+Coeur 3
+************************ */
+#heart3 {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-block: 1em;
+}
+
+#heart3:before,
+#heart3:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background-color: orange;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart3:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* *******************
+Coeur 1
+************************ */
+#heart1 {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    margin-block: 1em;
+}
+
+#heart1:before,
+#heart1:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 0;
+    width: 100px;
+    height: 180px;
+    background-color: tomato;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart1:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+
+/* ********************
+MAIN
+******************** */
+.main {
+    background-image: url("../img/pexels-tima-miroshnichenko-6693276.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Définition de l'animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Application de l'animation à l'élément */
+[id*="heart"] {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

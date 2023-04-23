@@ -1,0 +1,62 @@
+/****************************
+GENERALITY
+*****************************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* ***********************
+HEADER
+**************************** */
+.header {
+    background-color: rgb(13, 11, 11);
+    text-align: center;
+    color: white;
+    padding: 1em;
+}
+
+h1 {
+    color: brown;
+    font-size: 3em;
+}
+
+
+/* ***************************
+MAIN
+**************************** */
+.parent {
+    /* background-color: #fff; */
+}
+/**************************
+FOOTER
+****************************/
+.footer {
+    text-align: center;
+    background-color: rgb(118, 108, 108);
+    color: #fff;
+    padding-block: 2px;
+}
+
+.footer img {
+    width: 80px;
+}
+
+a {
+    color: rgb(65, 3, 122);
+}
+
+
+
+/* *************************
+div.container
+*****************************/
+.container {
+    max-width: 960px;
+    margin-inline: auto;
+}
